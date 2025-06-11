@@ -46,4 +46,7 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+
+    // 1|mU1MSTmGz7GuVvxghbfKNFx7VepbDbbHf9BwwJzw4fc7b908
 }

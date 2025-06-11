@@ -18,10 +18,10 @@ class AuthController extends Controller
         $user = User::create($fields);
 
         $token = $user->createToken($request->name);
-        \Log::debug($token->plainTextToken);
         
         return [
-            'user' => $user
+            'user' => $user,
+            $token->plainTextToken
         ];
     }
 
