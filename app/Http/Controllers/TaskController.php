@@ -50,7 +50,7 @@ class TaskController extends Controller implements HasMiddleware
             'description' => 'nullable|string',
             'due_date' => 'nullable|date',
         ]);
-        \Log::debug( $task = $request->user());
+        // \Log::debug( $task = $request->user());
         $task = $request->user()->tasks()->create($request->all());
         return response()->json($task, 201);
     }
