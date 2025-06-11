@@ -47,6 +47,11 @@ class User extends Authenticatable
         ];
     }
 
+    public function tasks(){
+        return $this->HasMany(Task::class);
+    }
+
 
     // 1|mU1MSTmGz7GuVvxghbfKNFx7VepbDbbHf9BwwJzw4fc7b908
+    // 2|SVWoinUBaZqBIYT2Oyb8oYjqx578r07tJBpz0nvY873e3dc0
 }
